@@ -3,10 +3,10 @@ Welcome to our Elegant Shoes E-Commerce Website, a stunning example of a respons
 
 ## Features:
 
-##### Responsive Design: 
+..* Responsive Design: 
 Our website is crafted with a mobile-first approach, ensuring a seamless and enjoyable shopping experience across various devices and screen sizes.
 
-##### Intuitive Navigation: 
+#### ..* Intuitive Navigation: 
 Discover a user-friendly interface that makes browsing through our extensive catalog a breeze. Find your perfect pair of shoes with ease.
 
 

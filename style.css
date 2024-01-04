@@ -1,0 +1,185 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: #202020;
+
+}
+body{
+  font-family: 'Roboto', 'Noto', sans-serif;
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  padding: 25px 10vw;
+  row-gap: 30px;
+}
+
+header .hamburger{
+  display: none;
+}
+header .showmenu{
+  display: none;
+}
+
+header .title h2{
+  /* color: #202020; */
+  width: fit-content;
+  margin: auto;
+  font-size: 2rem;
+}
+header .title h2 a{
+  text-decoration: none;
+  }
+header .navbar{
+  width: fit-content;
+  margin: auto;
+  display: flex;
+  column-gap: 4vw;
+}
+
+header a.nav{
+  text-decoration: none;
+  /* color: #202020; */
+}
+header a.nav.active{
+border-bottom: 2px solid black;
+}
+
+header .cart-icon{
+  position: absolute;
+  right: 40px;
+  top: 30px;
+  /* color: ; */
+}
+
+section{
+  /* margin-bottom: 50px; */
+}
+
+.image img{
+  width:100%
+}
+
+.small-sec{
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.small-sec p{
+font-size: 1.6rem;
+}
+
+.small-sec p, .small-sec div.shop-button {
+  margin: 30px auto;
+}
+.shop-button{
+  width: fit-content;
+  margin: auto;
+}
+
+.shop-button > * {
+  display: inline-block;
+  box-sizing: border-box;
+  border: 3px solid #000;
+  background-color: #FFF;
+  font-size: 16px;
+  font-weight: 500;
+  color: #202020;
+  margin: 0;
+  padding: 15px 44px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  /* border-radius: 0; */
+  outline: none;
+}
+
+
+section#s3 .images{
+  display: flex;
+  /* flex-direction: row; */
+}
+
+section#s3 .images .image{
+  width: 50%;
+}
+section#s3 .image img{
+  /* width:50% */
+  height: 30vw;
+
+}
+
+footer{
+  height: 100px;
+  text-align: center;
+}
+
+@media screen and (max-width:769px) {
+  header .hamburger{
+  display: block;
+  width: fit-content;
+  position: absolute;
+  left: 5vw;
+  top: 30px;
+}
+  header .hamburger div {
+    width: 27px;
+    height: 3px;
+    background-color: black;
+    margin: 5px 0;
+  }
+  header .navbar{
+    display: none;
+  }
+  header .cart-icon{
+    right: 5vw;
+    /* color: ; */
+  }
+  .image img {
+    /* height: 250px; */
+}
+.small-sec p {
+  font-size: 1.4rem;
+}
+.small-sec p, .small-sec div.shop-button {
+  margin: 3vw auto;
+}
+.shop-button > * {
+  font-size: 12px;
+  border: 2px solid #000;
+  padding: 12px 40px;
+}
+}
+
+@media screen and (max-width:469px) {
+  header .title h2 {
+   font-size: 1.5rem;
+}
+header .cart-icon {
+ top: 26px;
+}
+header .hamburger {
+  top: 27px;
+}
+
+header .hamburger div {
+  width: 24px;
+  margin: 4px 0;
+}
+.image img, section#s3 .image img {
+  height: 40vw;
+}
+.small-sec p {
+  font-size: 1rem;
+}
+.shop-button > * {
+  font-size: 10px;
+  padding: 8px 18px;
+}
+}
+

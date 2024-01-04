@@ -1,0 +1,269 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: #202020;
+
+}
+body{
+  font-family: 'Roboto', 'Noto', sans-serif;
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  padding: 25px 10vw;
+  row-gap: 30px;
+  padding-bottom: 60px;
+}
+
+header .hamburger{
+  display: none;
+}
+header .showmenu{
+  display: none;
+}
+
+header .title h2{
+  /* color: #202020; */
+  width: fit-content;
+  margin: auto;
+  font-size: 2rem;
+}
+header .title h2 a{
+  text-decoration: none;
+  }
+header .navbar{
+  width: fit-content;
+  margin: auto;
+  display: flex;
+  column-gap: 4vw;
+}
+
+header a.nav{
+  text-decoration: none;
+}
+header a.nav.active{
+border-bottom: 2px solid black;
+}
+
+header .cart-icon{
+  position: absolute;
+  right: 40px;
+  top: 30px;
+}
+form{
+  /* max-width: 900px; */
+  width: 65%;
+  margin: auto;
+}
+
+form .headin{
+
+}
+form .headin h1{
+  margin: 8px auto;
+  font-size: 1.4em;
+  font-weight: 500;
+  width: fit-content;
+}
+form .headin p{
+font-size: 14px;
+margin: auto;
+color: #757575;
+width: fit-content;
+}
+
+.flex.container{
+  margin: 90px auto;
+  display: flex;
+  justify-content: center;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  padding: 0 40px;
+}
+
+section.details, section.payment{
+  width:50%;
+
+}
+section > div{
+  display: flex;
+  flex-direction: column;
+}
+
+section .row-flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+section .row-flex > div{
+  display: flex;
+  flex-direction: column;
+}
+
+.expiry.row-flex{
+  column-gap: 40px;
+}
+section > div > * {
+  /* margin: 5px 0; */
+}
+
+section input{
+  font-size: 1.3rem;
+    font-weight: 300;
+    color: gray;
+    border: none;
+    padding: 8px 0;
+    width: 100%;
+    outline: none;
+    border-bottom: 1px solid rgba(156, 156, 156, 0.336);
+}
+
+select#country{
+  font-size: 1.3rem;
+}
+
+
+.shop-button{
+  position: relative;
+  width: fit-content;
+  display: block;
+  /* margin: auto; */
+}
+.summary > *{
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+h2{
+  font-size: 1.2rem;
+}
+.shop-button > * {
+  display: inline-block;
+  box-sizing: border-box;
+  border: 3px solid #000;
+  background-color: #FFF;
+  font-size: 16px;
+  font-weight: 500;
+  color: #202020;
+  margin: 0;
+  padding: 15px 44px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  /* border-radius: 0; */
+  outline: none;
+}
+
+@media screen and (max-width:1300px) {
+  form{
+    /* max-width: 900px; */
+    width: 80%;
+  }
+}
+
+@media screen and (max-width:800px) {
+  header{
+    padding-bottom: 25px;
+  }
+  header .hamburger{
+  display: block;
+  width: fit-content;
+  position: absolute;
+  left: 5vw;
+  top: 30px;
+}
+  header .hamburger div {
+    width: 27px;
+    height: 3px;
+    background-color: black;
+    margin: 5px 0;
+  }
+  header .navbar{
+    display: none;
+  }
+  header .cart-icon{
+    right: 5vw;
+    /* color: ; */
+  }
+  form{
+    width: 90%;
+  }
+  .flex.container{
+    flex-direction: column;
+    margin: 40px auto;
+  }
+  section {
+    padding: 0px 20px;
+}
+  section.payment{
+    margin:40px 0;
+  }
+  section.details, section.payment {
+    width: unset;
+}
+
+.small-sec p {
+  font-size: 1.4rem;
+}
+.small-sec p, .small-sec div.shop-button {
+  margin: 3vw auto;
+}
+/* form{
+  width: 85%;
+} */
+.shop-button a{
+  position: fixed;
+  width: 100%;
+  font-size: 1.2rem ;
+  color: #fff;
+  padding: 1.6rem 0;
+  bottom: 0;
+  left: 0;
+  background-color: #172C50;;
+}
+.shop-button>* {
+  font-size: 10px;
+  padding: 8px 18px;
+}
+}
+
+@media screen and (max-width:469px) {
+  header .title h2 {
+   font-size: 1.5rem;
+}
+header .cart-icon {
+ top: 26px;
+}
+header .hamburger {
+  top: 27px;
+}
+
+header .hamburger div {
+  width: 24px;
+  margin: 4px 0;
+}
+section{
+  padding: 0 10px;
+}
+.image img, section#s3 .image img {
+  height: 40vw;
+}
+.small-sec p {
+  font-size: 1rem;
+}
+.shop-button > * {
+  font-size: 10px;
+  padding: 8px 18px;
+}
+}
+
